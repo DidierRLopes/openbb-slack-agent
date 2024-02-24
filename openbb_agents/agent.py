@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 
 def openbb_agent(
-    query: str, openbb_tools: Optional[list[str]] = None, verbose=VERBOSE
+    query: str, openbb_tools: Optional[list[str]] = None, verbose=VERBOSE, OPENBB_PAT: Optional[str]=""
 ) -> str:
     """Answer a query using the OpenBB Agent equipped with tools.
 
@@ -46,6 +46,9 @@ def openbb_agent(
     ...              openbb_tools=["/equity/fundamental", "/equity/price/historical"])
 
     """
+    if OPENBB_PAT:
+        from openbb import obb
+        obb.account.login(pat=OPENBB_PAT)
 
     subquestion_list = generate_subquestions(query, verbose=verbose)
     logger.info("Generated subquestions: %s", subquestion_list)
