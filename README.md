@@ -34,7 +34,7 @@ Replace your OpenAI API key in the [slack_bot.py file](slack_bot.py).
 
 You will need: 
 
-*Go to **Install App** tab:  
+* Go to **Install App** tab:  
   * `SLACK_BOT_TOKEN` can be found int **OAuth Tokens for Your Workspace**
 
 * Go to **General** tab:
