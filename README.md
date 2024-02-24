@@ -102,3 +102,4 @@ POST /slack/events                       200 OK
 
 This project was done only for the context of the OpenBB Creaton 2023 to explore what one could build on top of the OpenBB agent and will **NOT** be maintained or even improved.
 
+Of course, there are several improvements that could be done (e.g. API keys as ENV vars, pip install -r requirements.txt,... but that's out of scope).
