@@ -1,0 +1,41 @@
+{
+    "display_information": {
+        "name": "Goh Analyst",
+        "description": "AI-Powered Financial Analyst",
+        "background_color": "#bf6400",
+        "long_description": "My name is Goh Analyst.\r\n\r\nI’m an AI-powered financial analyst who has access to over 100+ financial datasets through OpenBB.\r\n\r\nI live on Slack, and you can ask me anything.\r\n\r\nI do love to be sarcastic tho, so you may want to stay away from stupid questions."
+    },
+    "features": {
+        "app_home": {
+            "home_tab_enabled": true,
+            "messages_tab_enabled": false,
+            "messages_tab_read_only_enabled": true
+        },
+        "bot_user": {
+            "display_name": "Goh Analyst",
+            "always_online": false
+        }
+    },
+    "oauth_config": {
+        "scopes": {
+            "bot": [
+                "chat:write",
+                "channels:history",
+                "groups:history",
+                "im:history",
+                "app_mentions:read"
+            ]
+        }
+    },
+    "settings": {
+        "event_subscriptions": {
+            "request_url": "https://8abf-141-149-48-191.ngrok-free.app/slack/events",
+            "bot_events": [
+                "app_mention"
+            ]
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false
+    }
+}
