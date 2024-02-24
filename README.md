@@ -14,6 +14,13 @@ Sign up for the [OpenBB Hub](https://my.openbb.co).
 
 This will allow you to [set any API keys for different data vendors](https://my.openbb.co/app/platform/api-keys), which will allow your agent to be able to tap into more diversified financial datasets. Once that is done you can retrieve your Personal Access Token (PAT) [here](https://my.openbb.co/app/platform/pat).
 
+### Create Slack Bot
+
+1. Go into [Slack API page](https://api.slack.com/).
+2. Click on "Your Apps"
+3. Click on "Create new App"
+4. Select from Scratch
+
 
 
 ## Disclaimer
